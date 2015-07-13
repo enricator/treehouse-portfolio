@@ -1,9 +1,3 @@
-<?php
-/*
-   Template Name: Portfolio Page
-*/
-?>
-
 <?php get_header(); ?>
 
  <section class="row">
@@ -13,9 +7,9 @@
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
      
         <h1><?php the_title(); ?></h1>
-        <?php the_content(); ?>
-        
-      <?php endwhile;  endif; ?>
+        <p><?php the_content(); ?></p>
+        <p><i>the front page team</i></p>
+      <?php endwhile; endif; ?>
         
      </div>
    </div>
